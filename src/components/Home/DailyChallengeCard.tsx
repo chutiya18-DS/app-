@@ -78,9 +78,9 @@ const DailyChallengeCard: React.FC = () => {
 
       <button 
         className="w-full bg-gradient-to-r from-primary-500 to-secondary-500 text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-200 btn-hover"
-        disabled={mockDailyChallenge.isCompleted}
+        onClick={() => alert('เริ่มท้าทายแล้ว! 🎯')}
       >
-        {mockDailyChallenge.isCompleted ? 'เสร็จสิ้นแล้ว ✓' : 'เริ่มท้าทาย'}
+        เริ่มท้าทาย
       </button>
     </div>
   );

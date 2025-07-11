@@ -12,8 +12,7 @@ const ConversationPage: React.FC = () => {
   };
 
   const handleCompleteConversation = (scenarioId: string) => {
-    console.log('Completed conversation:', scenarioId);
-    // Here you would update the scenario completion status
+    alert('ยินดีด้วย! คุณเสร็จสิ้นบทสนทนาแล้ว 🎉');
     setSelectedScenario(null);
   };
 

@@ -115,7 +115,6 @@ const LessonCard: React.FC<LessonCardProps> = ({ lesson, onStart }) => {
 
         <button
           onClick={() => onStart(lesson)}
-          disabled={lesson.isLocked}
           className={`w-full py-3 rounded-xl font-medium transition-all duration-200 flex items-center justify-center space-x-2 ${
             lesson.isLocked
               ? 'bg-gray-100 text-gray-400 cursor-not-allowed'

@@ -36,8 +36,14 @@ const ConversationInterface: React.FC<ConversationInterfaceProps> = ({ scenario,
   };
 
   const handlePlayAudio = (text: string) => {
-    // Simulate audio playback
-    console.log('Playing audio for:', text);
+    if ('speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.8;
+      speechSynthesis.speak(utterance);
+    } else {
+      alert('เบราว์เซอร์ไม่รองรับการเล่นเสียง');
+    }
   };
 
   const handleRestart = () => {

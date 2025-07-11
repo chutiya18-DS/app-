@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, BookOpen, MessageCircle, Trophy, User } from 'lucide-react';
+import { Home, BookOpen, MessageCircle, Trophy, Book } from 'lucide-react';
 
 interface BottomNavProps {
   activeTab: string;
@@ -10,9 +10,9 @@ const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onTabChange }) => {
   const navItems = [
     { id: 'home', label: 'หน้าหลัก', icon: Home },
     { id: 'lessons', label: 'บทเรียน', icon: BookOpen },
+    { id: 'vocabulary', label: 'คำศัพท์', icon: Book },
     { id: 'conversation', label: 'สนทนา', icon: MessageCircle },
     { id: 'achievements', label: 'รางวัล', icon: Trophy },
-    { id: 'profile', label: 'โปรไฟล์', icon: User },
   ];
 
   return (

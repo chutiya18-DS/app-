@@ -49,7 +49,10 @@ const Header: React.FC = () => {
             </button>
 
             {/* Settings */}
-            <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
+            <button 
+              onClick={() => window.location.reload()}
+              className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+            >
               <Settings className="w-5 h-5 text-gray-600" />
             </button>
           </div>

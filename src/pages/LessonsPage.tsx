@@ -22,8 +22,11 @@ const LessonsPage: React.FC = () => {
   });
 
   const handleStartLesson = (lesson: Lesson) => {
-    console.log('Starting lesson:', lesson.title);
-    // Here you would navigate to the lesson detail page
+    if (lesson.isLocked) {
+      alert('บทเรียนนี้ยังล็อคอยู่ เรียนบทเรียนก่อนหน้าให้เสร็จก่อน');
+      return;
+    }
+    alert(`เริ่มเรียน: ${lesson.title} 📚`);
   };
 
   return (

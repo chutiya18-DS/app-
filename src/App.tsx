@@ -19,12 +19,12 @@ function App() {
         return <LessonsPage />;
       case 'vocabulary':
         return <VocabularyPage />;
+      case 'vocabulary':
+        return <VocabularyPage />;
       case 'conversation':
         return <ConversationPage />;
       case 'achievements':
         return <AchievementsPage />;
-      case 'profile':
-        return <ProfilePage />;
       default:
         return <HomePage />;
     }

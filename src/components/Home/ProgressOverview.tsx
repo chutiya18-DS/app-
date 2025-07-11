@@ -48,7 +48,7 @@ const ProgressOverview: React.FC = () => {
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-gray-900">ความก้าวหน้า</h3>
         <button className="text-sm text-primary-600 font-medium hover:text-primary-700">
-          ดูทั้งหมด
+          รายละเอียด
         </button>
       </div>
 
